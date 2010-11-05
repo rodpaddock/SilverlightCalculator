@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <script type="text/javascript" src="Silverlight.js"></script>
+    <script type="text/javascript" src="jquery-1.4.2.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(main);
+    </script> 
+
+  </head>
+
+  <body>
+
+	<object id="calculator" data="data:application/x-silverlight-2," type="application/x-silverlight-2" width="0%" height="0%">
+		<param name="source" value="Silverlight/SilverlightCalculator.xap"/>
+		<param name="background" value="white" />
+		<param name="minRuntimeVersion" value="3.0.40818.0" />
+		<param name="autoUpgrade" value="true" />
+		<a href="http://go.microsoft.com/fwlink/?LinkID=149156&v=3.0.40818.0" style="text-decoration:none">
+		<img src="http://go.microsoft.com/fwlink/?LinkId=108181" alt="Get Microsoft Silverlight" style="border-style:none"/>
+	</object>
+
+
+	<h2> Calculator Samples</h2>
+	<table>
+		<tr>
+		  <td>Add Numbers<td>
+		  <td><input type="text" id="addNumber1" value="10"/>
+		  <td><input type="text" id="addNumber2" value="7"/>
+		  <td><input type="button" id="cmdAddNumbers" value="Add Values"/>
+		  <td><input type="button" id="cmdMultiplyNumbers" value="Multiply Values"/>
+		  <td><input type="button" id="cmdDivideNumbers" value="Divide Values"/>
+		  <td><input type="button" id="cmdSubtractNumbers" value="Subtract Values"/>
+		</tr>
+	</table>
+
+  </body>
+
+</html>
