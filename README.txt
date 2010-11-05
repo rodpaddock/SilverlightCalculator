@@ -19,7 +19,7 @@ This application is written in C# and deployed via a Silverlight Plugin.
 
 There is a fully functional example in the WebSample Folder.
 
-You can also access a demo of this application at calculator.dashpoint.com
+You can also access a demo of this application at http://calculator.dashpoint.com
 
 Using this application is very simple. You just add an OBJECT tag in your web page pointing at the SilverlightCalculator.xap file.
 
