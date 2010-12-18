@@ -40,8 +40,7 @@ namespace SilverlightCalculator
             return (decimal_1/decimal_2).ToString();
         }
 
-        [
-            ScriptableMember]
+        [ScriptableMember]
         public string Subtract(string value1, string value2)
         {
             var decimal_1 = System.Convert.ToDecimal(value1);
@@ -50,5 +49,19 @@ namespace SilverlightCalculator
 
             return (decimal_1 - decimal_2).ToString();
         }
+
+        [ScriptableMember]
+        public string AddSeries(string series)
+        {
+            var returnValue = 0.0m;
+          
+            var parts = series.Split(System.Convert.ToChar(","));
+            foreach(string part in parts)
+            {
+                returnValue += System.Convert.ToDecimal(part);
+            }
+            return returnValue.ToString();
+        }
+
     }
 }

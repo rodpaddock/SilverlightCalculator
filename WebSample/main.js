@@ -3,6 +3,7 @@ function main(){
    $("#cmdMultiplyNumbers").click(multiplyNumbers);
    $("#cmdDivideNumbers").click(divideNumbers);
    $("#cmdSubtractNumbers").click(subtractNumbers);
+   $("#cmdAddSeries").click(addSeries);
 }
 
 function getCalculatorHandle() {
@@ -18,6 +19,11 @@ function addNumbers(){
   alert(calc);
 }
 
+function addSeries() {
+    var seriesString = $("#txtSeries").val();
+    var calc = getCalculatorHandle().AddSeries(seriesString);
+    alert(calc);
+}
 
 function multiplyNumbers(){
   var factor_1 = $("#addNumber1").val();
